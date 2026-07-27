@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prematrícula - Colegio</title>
+
+    <link rel="stylesheet" href="csstyle.css">
+
+</head>
+
+<body>
+    <nav class="navbar"> 
+		<div class="logo">
+			<a href="#" style="display: flex;align-items: center;"><img src="logipfm2026.png" width="95" alt="not file"><span>C.E.M.G.P.F.M</span></a>
+		</div>
+<!--Boton para telefonos-->
+		<button class="menu-bar" id="movil-menu">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</button>
+				<ul id="nav-list" class="nav-list">
+				<li><a href="Acercadenosotro.html">Acerca de Nosotros</a></li>
+				<li><a href="oferacademic.html">Ofertas Academicas</a></li>
+				<li><a href="talleres.html">Talleres</a></li>
+				<li><a href="matricula.html">Matricula </a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>		
+		<link rel="stylesheet" href="stylecss.css">
+
+<div class="contenedor">
+
+    <div class="encabezado">
+
+        <img src="logipfm2026.png" class="logo">
+
+        <div>
+            <h1>COLEGIO GUBERNAMENTAL</h1>
+            <h2>Sistema de Prematrícula</h2>
+            <p>Año Lectivo 2027</p>
+        </div>
+
+    </div>
+
+<form action="guardarphp.php" method="POST">
+
+<h3>Datos del Estudiante</h3>
+
+<div class="fila">
+
+<div class="grupo">
+<label>Primer Nombre</label>
+<input type="text" name="primer_nombre" required>
+</div>
+
+<div class="grupo">
+<label>Segundo Nombre</label>
+<input type="text" name="segundo_nombre">
+</div>
+
+<div class="grupo">
+<label>Primer Apellido</label>
+<input type="text" name="primer_apellido" required>
+</div>
+
+<div class="grupo">
+<label>Segundo Apellido</label>
+<input type="text" name="segundo_apellido">
+</div>
+
+</div>
+
+<div class="fila">
+
+<div class="grupo">
+<label>Número de Identidad</label>
+<input type="text" name="identidad" required>
+</div>
+
+<div class="grupo">
+<label>Fecha de Nacimiento</label>
+<input type="date" name="fecha_nacimiento" required>
+</div>
+
+<div class="grupo">
+<label>Edad</label>
+<input type="number" name="edad">
+</div>
+
+<div class="grupo">
+<label>Sexo</label>
+
+<select name="sexo">
+
+<option>Masculino</option>
+
+<option>Femenino</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="fila">
+
+<div class="grupo">
+<label>Correo Electrónico</label>
+<input type="email" name="correo">
+</div>
+
+<div class="grupo">
+<label>Teléfono</label>
+<input type="text" name="telefono">
+</div>
+
+<div class="grupo">
+<label>Departamento</label>
+
+<select name="departamento">
+
+<option>Atlántida</option>
+<option>Choluteca</option>
+<option>Colón</option>
+<option>Comayagua</option>
+<option>Copán</option>
+<option>Cortés</option>
+<option>El Paraíso</option>
+<option>Francisco Morazán</option>
+<option>Gracias a Dios</option>
+<option>Intibucá</option>
+<option>Islas de la Bahía</option>
+<option>La Paz</option>
+<option>Lempira</option>
+<option>Ocotepeque</option>
+<option>Olancho</option>
+<option>Santa Bárbara</option>
+<option>Valle</option>
+<option>Yoro</option>
+
+</select>
+
+</div>
+
+<div class="grupo">
+
+<label>Municipio</label>
+
+<input type="text" name="municipio">
+
+</div>
+
+</div>
+
+<div class="fila">
+
+<div class="grupo" style="width:100%;">
+
+<label>Dirección Exacta</label>
+
+<textarea name="direccion" rows="4"></textarea>
+
+</div>
+
+</div>
+
+<!-- ================= DATOS DEL PADRE ================= -->
+
+<h3>Datos del Padre</h3>
+
+<div class="fila">
+
+<div class="grupo">
+<label>Nombre Completo del Padre</label>
+<input type="text" name="padre">
+</div>
+
+<div class="grupo">
+<label>Identidad</label>
+<input type="text" name="identidad_padre">
+</div>
+
+<div class="grupo">
+<label>Teléfono</label>
+<input type="text" name="telefono_padre">
+</div>
+
+</div>
+
+<div class="fila">
+
+<div class="grupo">
+<label>Profesión</label>
+<input type="text" name="profesion_padre">
+</div>
+
+<div class="grupo">
+<label>Lugar de Trabajo</label>
+<input type="text" name="trabajo_padre">
+</div>
+
+</div>
+
+<!-- ================= DATOS DE LA MADRE ================= -->
+
+<h3>Datos de la Madre</h3>
+
+<div class="fila">
+
+<div class="grupo">
+<label>Nombre Completo de la Madre</label>
+<input type="text" name="madre">
+</div>
+
+<div class="grupo">
+<label>Identidad</label>
+<input type="text" name="identidad_madre">
+</div>
+
+<div class="grupo">
+<label>Teléfono</label>
+<input type="text" name="telefono_madre">
+</div>
+
+</div>
+
+<div class="fila">
+
+<div class="grupo">
+<label>Profesión</label>
+<input type="text" name="profesion_madre">
+</div>
+
+<div class="grupo">
+<label>Lugar de Trabajo</label>
+<input type="text" name="trabajo_madre">
+</div>
+
+</div>
+
+<!-- ================= ENCARGADO ================= -->
+
+<h3>Encargado (Si aplica)</h3>
+
+<div class="fila">
+
+<div class="grupo">
+<label>Nombre del Encargado</label>
+<input type="text" name="encargado">
+</div>
+
+<div class="grupo">
+<label>Parentesco</label>
+<input type="text" name="parentesco">
+</div>
+
+<div class="grupo">
+<label>Teléfono</label>
+<input type="text" name="telefono_encargado">
+</div>
+
+</div>
+
+<!-- ================= INFORMACIÓN ACADÉMICA ================= -->
+
+<h3>Información Académica</h3>
+
+<div class="fila">
+
+<div class="grupo">
+
+<label>Grado</label>
+
+<select name="grado">
+
+<option>7°</option>
+<option>8°</option>
+<option>9°</option>
+<option>10°</option>
+<option>11°</option>
+<option>12°</option>
+
+</select>
+
+</div>
+
+<div class="grupo">
+
+<label>Carrera</label>
+
+<select name="carrera">
+
+<option>BTP Informática</option>
+<option>BTP Contaduría y Finanzas</option>
+<option>BTP Administración de Empresas</option>
+<option>BTP Humanidades</option>
+<option>BTP Ejecutivo Bilingüe</option>
+<option>BTP Control de Calidad</option>
+
+</select>
+
+</div>
+
+<div class="grupo">
+
+<label>Jornada</label>
+
+<select name="jornada">
+
+<option>Matutina</option>
+<option>Vespertina</option>
+<option>Nocturna</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="fila">
+
+<div class="grupo">
+<label>Año Lectivo</label>
+<input type="number" name="anio" value="2027">
+</div>
+
+<div class="grupo">
+<label>Colegio de Procedencia</label>
+<input type="text" name="procedencia">
+</div>
+
+</div>
+
+<!-- ================= INFORMACIÓN MÉDICA ================= -->
+
+<h3>Información Médica</h3>
+
+<div class="fila">
+
+    <div class="grupo">
+        <label>Tipo de Sangre</label>
+
+        <select name="tipo_sangre">
+
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+
+        </select>
+
+    </div>
+
+    <div class="grupo">
+        <label>¿Tiene alguna enfermedad?</label>
+        <input type="text" name="enfermedad">
+    </div>
+
+    <div class="grupo">
+        <label>¿Tiene alergias?</label>
+        <input type="text" name="alergias">
+    </div>
+
+</div>
+
+<div class="fila">
+
+    <div class="grupo" style="width:100%;">
+        <label>Medicamentos que utiliza</label>
+        <textarea name="medicamentos" rows="3"></textarea>
+    </div>
+
+</div>
+
+<!-- ================= CONTACTO DE EMERGENCIA ================= -->
+
+<h3>Contacto de Emergencia</h3>
+
+<div class="fila">
+
+    <div class="grupo">
+        <label>Nombre Completo</label>
+        <input type="text" name="contacto_emergencia">
+    </div>
+
+    <div class="grupo">
+        <label>Parentesco</label>
+        <input type="text" name="parentesco_emergencia">
+    </div>
+
+    <div class="grupo">
+        <label>Teléfono</label>
+        <input type="text" name="telefono_emergencia">
+    </div>
+
+</div>
+
+<!-- ================= DOCUMENTOS ================= -->
+
+<h3>Documentos Entregados</h3>
+
+<div class="fila">
+
+<label><input type="checkbox" name="identidad_copia"> Copia de Identidad</label><br>
+
+<label><input type="checkbox" name="certificado"> Certificado de Estudios</label><br>
+
+<label><input type="checkbox" name="partida"> Partida de Nacimiento</label><br>
+
+<label><input type="checkbox" name="foto"> Fotografías</label><br>
+
+<label><input type="checkbox" name="vacuna"> Carné de Vacunación</label>
+
+</div>
+
+<h3>Observaciones</h3>
+
+<textarea name="observaciones" rows="5" style="width:100%;"></textarea>
+
+<br><br>
+
+<label>
+<input type="checkbox" required>
+Declaro que toda la información proporcionada es verdadera.
+</label>
+
+<br><br>
+
+<div class="botones">
+
+<button type="submit">💾 Guardar Prematrícula</button>
+
+<button type="reset">🧹 Limpiar</button>
+
+<button type="button" onclick="window.print();">🖨️ Imprimir</button>
+
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
