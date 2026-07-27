@@ -1,0 +1,610 @@
+@charset "utf-8";
+/* CSS Document */
+body header {
+	background-color: #29177a;
+	text-align: center;
+	color: white;
+	font-size: 200;
+}
+
+/*color de las iniciales*/
+.logo span{
+	color: white
+}
+/*Menu de Navegacion*/
+.navbar{
+	display: flex; justify-content: space-between;
+	align-items: center; background-color: #190a5c;
+	padding: 1rem 2rem; color:#F3F1F1;
+}
+.nav-list{
+	display: flex; list-style: none;
+}
+.nav-list li a{
+	color: #F5F4F4; text-decoration: none;
+	padding: 0.5rem 1rem;
+}
+/*ocultar la barra del menu*/
+.menu-bar{
+	display: none; flex-direction: column;
+	cursor: pointer; background: transparent;
+	border: none;
+}
+.bar{
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin: 4px 0px;
+}
+@media (max-width:768px){
+	.menu-bar{display: flex; }
+		
+	.nav-list{
+		display: none;
+		flex-direction: column;
+		width: 100%;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		background-color: #333232;
+		text-align: center;
+		z-index: 999;
+	}
+	.nav-list.active {display: flex !important}
+	.nav-list li{padding: 1rem 0;}
+	
+}
+.dropdown{
+    position: relative;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background: rgb(37, 9, 73);
+    min-width: 220px;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.submenu li{
+    border: 1px solid #cccccc57;
+}
+
+.submenu li a{
+    display: block;
+    padding: 10px;
+    color: rgb(243, 239, 239);
+    text-decoration: none;
+}
+
+.submenu li a:hover{
+    background: #150364;
+}
+
+.dropdown:hover .submenu{
+    display: block;
+}
+
+
+/*seccion de texto*/
+.contenedor-text{
+	text-align: center;
+	color: #0D48C0;
+}
+.Contenedor{
+	 width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+}
+/*ofertasacademicas*/
+.carreras{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:30px;
+}
+
+.card{
+    width:320px;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.4s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px;
+    color:#003366;
+}
+
+.card p{
+    padding:0 15px;
+    text-align:justify;
+}
+
+.btn{
+    display:inline-block;
+    margin:15px;
+    padding:10px 20px;
+    background:#0099ff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0066cc;
+}
+
+/* Contenedor principal */
+.info-institucion{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Tarjetas */
+.card1{
+    background: rgba(255,255,255,0.90);
+    border-left: 8px solid #0b3d91;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+/*oferinformatica*/
+.informatica{
+    width:90%;
+    margin:auto;
+}
+
+.contenido-superior{
+    display:flex;
+    gap:30px;
+    margin-bottom:30px;
+}
+
+.texto{
+    flex:1;
+    background:#f5f5f5;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.video{
+    flex:2;
+    background:#91c6d6;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.video video{
+    width:100%;
+    border-radius:10px;
+}
+
+.imagen{
+    text-align:center;
+    background:#f5f5f5;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.imagen img{
+    width:100%;
+    max-height:500px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+
+/*contaduria*/
+.carrera{
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.contenido{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.texto{
+    flex: 1;
+    height: auto;
+}
+
+.texto h2{
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #0d3b66;
+}
+
+.texto p{
+    font-size: 19px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+.imagen{
+    flex: 1;
+}
+
+.imagen img{
+    width: 150%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+/**/
+
+
+
+
+/*Btp-administracion*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+    padding:30px;
+}
+
+.contenedor{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+/* Cuadros superiores */
+.caja{
+    border:2px solid #999;
+    background:white;
+    padding:15px;
+}
+
+.texto{
+    height:600px;
+}
+
+.video{
+    height:600px;
+}
+
+.video video{
+    width:100%;
+    max-height:550px;
+    display:block;
+    margin-top:15px;
+}
+
+/* Imagen abajo */
+.imagen{
+    grid-column:1 / 3;
+    height:400px;
+    text-align:center;
+}
+
+.imagen img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/*pre-matricula*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.requisito {
+    margin-bottom: 30px;
+}
+
+.requisito h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.caja {
+    border: 2px solid #999;
+    padding: 20px;
+    min-height: 100px;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #fafafa;
+}
+
+/*matricula*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #1e1597, #2a9df4);
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.contenedor{
+    max-width: 900px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    color: rgb(11, 10, 54);
+    margin-bottom: 35px;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.tarjeta{
+    background: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    border-left: 8px solid #0f4c81;
+}
+
+.tarjeta:hover{
+    transform: translateY(-5px);
+}
+
+.tarjeta h2{
+    color: #0f4c81;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.tarjeta p{
+    color: #444;
+    line-height: 1.8;
+    text-align: justify;
+    font-size: 18px;
+}
+
+strong{
+    color: #0f4c81;
+}
+
+@media(max-width:768px){
+    h1{
+        font-size: 30px;
+    }
+
+    .tarjeta h2{
+        font-size: 22px;
+    }
+
+    .tarjeta p{
+        font-size: 16px;
+    }
+}
+progress,meter{
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}
+/*contacto*/
+/* Contenedor del formulario */
+.formulario{
+    width: 400px;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.formulario h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Campos de texto */
+.formulario input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Efecto al seleccionar */
+.formulario input:focus{
+    outline: none;
+    border-color: #25D366;
+}
+
+/* Botón */
+.formulario button{
+    width: 100%;
+    padding: 12px;
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efecto hover */
+.formulario button:hover{
+    background: #1ebc57;
+}
+
+
+/* Títulos */
+.card h2{
+    color: #0b3d91;
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #0b3d91;
+    padding-bottom: 10px;
+}
+
+/* Texto */
+.card1 p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+/*pie de pagina*/
+.footer{
+    display: grid;
+    grid-template-columns: 25% 30% 55%;
+    gap: 20px;
+    padding: 30px;
+    border-top: 2px solid #ccc;
+    background: #190a5c;
+    text-align: center;
+    align-items: start;
+}
+/*Contacto*/
+.contacto{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+	
+}
+
+.contacto label{
+    width: 120px;
+    font-weight: bold;
+	color: #f0f0f0;
+}
+
+.contacto input{
+    width: 110px;
+    height: 30px;
+    font-size: 14px;
+    padding: 5px;
+    
+}
+
+.whatsapp{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.columna h3{
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #F3F1F1;
+}
+
+
+
+.logo{
+    width:100px;
+    height: auto;
+}
+
+.centro iframe{
+	color: #f0f0f0;
+    border-radius: 10px;
+	width: 500px;
+	height: 250px;
+}
+
+
+.copyright{
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgb(243, 241, 241);
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+    .footer{
+        grid-template-columns: 33%;
+    }
+}
