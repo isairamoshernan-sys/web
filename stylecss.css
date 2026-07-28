@@ -1,59 +1,65 @@
 @charset "utf-8";
 /* CSS Document */
-body header {
-	background-color: #29177a;
-	text-align: center;
-	color: white;
-	font-size: 200;
+
+body{
+    margin: 0;
+    padding: 0;
 }
 
-/*color de las iniciales*/
+body header{
+    background-color: #29177a;
+    text-align: center;
+    color: white;
+    font-size: 200;
+}
+
+/* Color de las iniciales */
 .logo span{
-	color: white
+    color: white;
 }
-/*Menu de Navegacion*/
+
+/* Menú de navegación */
 .navbar{
-	display: flex; justify-content: space-between;
-	align-items: center; background-color: #190a5c;
-	padding: 1rem 2rem; color:#F3F1F1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #190a5c;
+    padding: 1rem 2rem;
+    color: #F3F1F1;
+    position: relative;
 }
+
 .nav-list{
-	display: flex; list-style: none;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
 .nav-list li a{
-	color: #F5F4F4; text-decoration: none;
-	padding: 0.5rem 1rem;
+    color: #F5F4F4;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
 }
-/*ocultar la barra del menu*/
+
+/* Ocultar botón menú */
 .menu-bar{
-	display: none; flex-direction: column;
-	cursor: pointer; background: transparent;
-	border: none;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: transparent;
+    border: none;
 }
+
 .bar{
-	width: 25px;
-	height: 3px;
-	background-color: white;
-	margin: 4px 0px;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
 }
-@media (max-width:768px){
-	.menu-bar{display: flex; }
-		
-	.nav-list{
-		display: none;
-		flex-direction: column;
-		width: 100%;
-		position: absolute;
-		top: 60px;
-		left: 0;
-		background-color: #333232;
-		text-align: center;
-		z-index: 999;
-	}
-	.nav-list.active {display: flex !important}
-	.nav-list li{padding: 1rem 0;}
-	
-}
+
+/* Menú desplegable */
 .dropdown{
     position: relative;
 }
@@ -90,46 +96,71 @@ body header {
     display: block;
 }
 
-
-/*seccion de texto*/
+/* Sección de texto */
 .contenedor-text{
-	text-align: center;
-	color: #0D48C0;
+    text-align: center;
+    color: #0D48C0;
 }
+
 .Contenedor{
-	 width: 80%;
+    width: 80%;
     max-width: 900px;
     margin: 30px auto;
     background-color: white;
     padding: 30px;
+    box-sizing: border-box;
 }
+/* ========================= */
+/* Carrusel */
+/* ========================= */
 
-
-
-/*carrusel*/
 .carrusel-container{
-	position: relative; overflow: hidden; height: 500px; background: #E5E1E1; margin-top: 10px;
-}
-.carrusel-slide img{
-	width: 100%; height: 300%; object-fit: cover; display: none; image-resolution: auto;
-}
-.carrusel-slide img.active{
-	display: block;
-}
-.next{
-	right: 0;
-}
-.prev, .next{
-	position: absolute; top:50;
-	transform: translateY(-50%);
-	background: rgba(0,0,0,0.5);
-	color: white; border: none; padding: 20px; cursor: pointer;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #E5E1E1;
+    margin-top: 10px;
 }
 
-/*pie de pagina*/
+.carrusel-slide img{
+    width: 100%;
+    height: auto;
+    display: none;
+    object-fit: cover;
+}
+
+.carrusel-slide img.active{
+    display: block;
+}
+
+.prev,
+.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.prev{
+    left: 10px;
+}
+
+.next{
+    right: 10px;
+}
+
+/* ========================= */
+/* Pie de página */
+/* ========================= */
+
 .footer{
     display: grid;
-    grid-template-columns: 25% 30% 55%;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     padding: 30px;
     border-top: 2px solid #ccc;
@@ -137,18 +168,17 @@ body header {
     text-align: center;
     align-items: start;
 }
-/*Contacto*/
+
 .contacto{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-	
 }
 
 .contacto label{
     width: 120px;
     font-weight: bold;
-	color: #f0f0f0;
+    color: #f0f0f0;
 }
 
 .contacto input{
@@ -171,34 +201,232 @@ body header {
     color: white;
 }
 
-.caja{
-    color: transparent;
-}
-
-
 .logo{
-    width:100px;
+    width: 100px;
     height: auto;
 }
 
 .centro iframe{
-	color: #f0f0f0;
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
     border-radius: 10px;
-	width: 500px;
-	height: 250px;
 }
-
 
 .copyright{
     margin-top: 15px;
     font-size: 14px;
-    color: rgb(243, 241, 241);
+    color: #f3f1f1;
     font-weight: bold;
 }
+/* ========================= */
+/* Responsive para celulares */
+/* ========================= */
 
-/* Responsive */
-@media (max-width: 768px){
-    .footer{
-        grid-template-columns: 33%;
+@media (max-width:768px){
+
+    .navbar{
+        flex-wrap: wrap;
+        padding: 15px;
     }
+
+    .menu-bar{
+        display: flex;
+    }
+
+    .nav-list{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333232;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .nav-list.active{
+        display: flex;
+    }
+
+    .nav-list li{
+        padding: 15px 0;
+    }
+
+    .logo img{
+        width: 60px;
+        height: auto;
+    }
+
+    .logo span{
+        font-size: 16px;
+    }
+
+    header h1{
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .contenedor-text h1{
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .Contenedor{
+        width: 95%;
+        padding: 15px;
+    }
+
+    .footer{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contacto{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto label{
+        width: auto;
+        margin-bottom: 5px;
+    }
+
+    .contacto input{
+        width: 90%;
+        max-width: 250px;
+        text-align: center;
+    }
+
+    .whatsapp{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .centro iframe{
+        width: 100%;
+        height: 250px;
+    }
+
+    .columna img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+/* ========================================= */
+/* Adaptable a computadoras, tablets y móviles */
+/* ========================================= */
+
+/* Hace que las imágenes nunca se salgan */
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* Evita desbordamientos */
+*{
+    box-sizing:border-box;
+}
+
+/* Computadoras grandes */
+@media screen and (min-width:1200px){
+
+    .Contenedor{
+        width:80%;
+        max-width:1100px;
+    }
+
+    .footer{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+/* Tablets */
+@media screen and (max-width:992px){
+
+    .Contenedor{
+        width:90%;
+    }
+
+    .footer{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .contacto{
+        justify-content:center;
+    }
+
+}
+
+/* Celulares */
+@media screen and (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .navbar{
+        flex-wrap:wrap;
+    }
+
+    .menu-bar{
+        display:flex;
+    }
+
+    .nav-list{
+        width:100%;
+    }
+
+    .Contenedor{
+        width:95%;
+    }
+
+    .carrusel-slide img{
+        width:100%;
+        height:auto;
+    }
+
+    .prev,
+    .next{
+        padding:10px;
+        font-size:18px;
+    }
+
+    .footer{
+        grid-template-columns:1fr;
+    }
+
+    .centro iframe{
+        width:100%;
+        height:250px;
+    }
+
+}
+
+/* Teléfonos pequeños */
+@media screen and (max-width:480px){
+
+    header h1{
+        font-size:20px;
+    }
+
+    .contenedor-text h1{
+        font-size:20px;
+    }
+
+    .navbar{
+        padding:10px;
+    }
+
+    .nav-list li a{
+        padding:12px;
+    }
+
+    .contacto input{
+        width:100%;
+    }
+
 }

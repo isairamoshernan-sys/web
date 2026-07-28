@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <title>BTP-Ciencias y Humanidades</title>
 <link href="stylcss.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="logipfm2026" href="logipfm2026.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 		<!--Menu de Navegación-->
@@ -42,22 +44,19 @@
 En nuestro colegio brindamos una formación integral que combina conocimientos científicos y humanísticos.
 Contamos con docentes capacitados que guían a los estudiantes en áreas como matemáticas, ciencias naturales, ciencias sociales, etc.
 Nuestros alumnos desarrollan habilidades de análisis, pensamiento crítico y comunicación, preparándose para continuar sus estudios superiores o integrarse al ámbito laboral.
-Además, fomentamos valores como la responsabilidad, el respeto y el compromiso, formando jóvenes capaces de contribuir positivamente a la sociedad.
-
-
         </p>
     </div>
 
     <!-- Video -->
     <div class="caja video">
-        <video controls>
-            <source src="ImgsitiowebdeIsaiJorge/videoofertaacademicahumanidades.mp4">
+        <video controls autoplay muted loop playsinline>
+            <source src="videoofertaacademicahumanidades.mp4">
         </video>
     </div>
 
     <!-- Imagen -->
     <div class="caja imagen">
-        <img src="ImgsitiowebdeIsaiJorge/imgofertaacademicahumanidades1.jpeg" alt="Imagen">
+        <img src="imgofertaacademicahumanidades1.jpeg" alt="Imagen">
     </div>
 
 </div>
@@ -110,10 +109,19 @@ Además, fomentamos valores como la responsabilidad, el respeto y el compromiso,
     <!-- Columna 3 -->
     <div class="columna">
         <h3>Desarrolladores Web</h3>
-        <img src="imagenesdeinicio/imglogodesarrolladoresweb.png" width="250" height="250" alt="Logo Desarrolladores" class="logo">
+        <img src="imglogodesarrolladoresweb.png" width="250" height="250" alt="Logo Desarrolladores" class="logo">
     </div>
 
 	</footer>
 <body>
+     <script>
+		const menu = document.getElementById('movil-menu');
+		const navlist = document.getElementById('nav-list');
+		
+		menu.addEventListener('click',() =>{
+			navlist.classList.toggle('active');				  
+	 });
+	</script>
+	<script src="javascrip.js"></script>
 </body>
 </html>

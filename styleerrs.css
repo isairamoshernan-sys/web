@@ -1,95 +1,132 @@
 @charset "utf-8";
 /* CSS Document */
-body header {
-	background-color: #29177a;
-	text-align: center;
-	color: white;
-	font-size: 200;
-    margin-top: 15%;
+
+/* Encabezado */
+body header{
+    background-color:#29177a;
+    text-align:center;
+    color:white;
+    font-size:200;
 }
 
-/*color de las iniciales*/
+/* Color de las iniciales */
 .logo span{
-	color: white
+    color:white;
 }
-/*Menu de Navegacion*/
+
+/* Menú de navegación */
 .navbar{
-	display: flex; justify-content: space-between;
-	align-items: center; background-color: #190a5c;
-	padding: 1rem 2rem; color:#F3F1F1;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#190a5c;
+    padding:1rem 2rem;
+    color:#F3F1F1;
+    position:relative;
 }
+
 .nav-list{
-	display: flex; list-style: none;
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
 }
+
 .nav-list li a{
-	color: #F5F4F4; text-decoration: none;
-	padding: 0.5rem 1rem;
+    color:#F5F4F4;
+    text-decoration:none;
+    padding:0.5rem 1rem;
+    display:block;
 }
-/*ocultar la barra del menu*/
+
+/* Botón del menú */
 .menu-bar{
-	display: none; flex-direction: column;
-	cursor: pointer; background: transparent;
-	border: none;
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+    background:transparent;
+    border:none;
 }
+
 .bar{
-	width: 25px;
-	height: 3px;
-	background-color: white;
-	margin: 4px 0px;
+    width:25px;
+    height:3px;
+    background-color:white;
+    margin:4px 0;
 }
+
+/* Responsive del menú */
 @media (max-width:768px){
-	.menu-bar{display: flex; }
-		
-	.nav-list{
-		display: none;
-		flex-direction: column;
-		width: 100%;
-		position: absolute;
-		top: 60px;
-		left: 0;
-		background-color: #333232;
-		text-align: center;
-		z-index: 999;
-	}
-	.nav-list.active {display: flex !important}
-	.nav-list li{padding: 1rem 0;}
-	
+
+    .navbar{
+        flex-wrap:wrap;
+        padding:15px;
+    }
+
+    .menu-bar{
+        display:flex;
+    }
+
+    .nav-list{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        position:absolute;
+        top:70px;
+        left:0;
+        background:#333232;
+        text-align:center;
+        z-index:999;
+    }
+
+    .nav-list.active{
+        display:flex !important;
+    }
+
+    .nav-list li{
+        padding:1rem 0;
+    }
 }
+
+/* Menú desplegable */
+
 .dropdown{
-    position: relative;
+    position:relative;
 }
 
 .submenu{
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    list-style: none;
-    background: white;
-    min-width: 220px;
-    padding: 0;
-    margin: 0;
-    z-index: 1000;
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    list-style:none;
+    background:white;
+    min-width:220px;
+    padding:0;
+    margin:0;
+    z-index:1000;
 }
 
 .submenu li{
-    border: 1px solid #ccc;
+    border:1px solid #ccc;
 }
 
 .submenu li a{
-    display: block;
-    padding: 10px;
-    color: black;
-    text-decoration: none;
+    display:block;
+    padding:10px;
+    color:black;
+    text-decoration:none;
 }
 
 .submenu li a:hover{
-    background: #f0f0f0;
+    background:#f0f0f0;
 }
 
 .dropdown:hover .submenu{
-    display: block;
+    display:block;
 }
+
+/* Configuración general */
 
 *{
     margin:0;
@@ -102,6 +139,9 @@ body{
     background:#f4f6f9;
     padding:30px;
 }
+/* ========================= */
+/* Sección Talleres */
+/* ========================= */
 
 .talleres{
     max-width:1200px;
@@ -123,6 +163,7 @@ body{
     border-radius:15px;
     overflow:hidden;
     box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    transition:0.3s;
 }
 
 .texto{
@@ -150,14 +191,17 @@ body{
     width:100%;
     height:100%;
     object-fit:cover;
+    display:block;
 }
 
 .tarjeta:hover{
     transform:scale(1.02);
-    transition:0.3s;
 }
 
-@media(max-width:768px){
+/* Responsive para las tarjetas */
+
+@media (max-width:768px){
+
     .tarjeta{
         flex-direction:column;
     }
@@ -166,88 +210,127 @@ body{
     .imagen{
         width:100%;
     }
+
+    .imagen{
+        height:auto;
+    }
+
+    .imagen img{
+        height:auto;
+    }
+
+    .texto{
+        padding:20px;
+    }
+
 }
-/*pie de pagina*/
+/* ========================= */
+/* Pie de página */
+/* ========================= */
+
 .footer{
-    display: grid;
-    grid-template-columns: 25% 30% 55%;
-    gap: 20px;
-    padding: 30px;
-    border-top: 2px solid #ccc;
-    background: #190a5c;
-    text-align: center;
-    align-items: start;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:20px;
+    padding:30px;
+    border-top:2px solid #ccc;
+    background:#190a5c;
+    text-align:center;
+    align-items:start;
 }
-/*Contacto*/
+
+/* Contacto */
+
 .contacto{
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-	
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
 }
 
 .contacto label{
-    width: 120px;
-    font-weight: bold;
-	color: #f0f0f0;
+    width:120px;
+    font-weight:bold;
+    color:#f0f0f0;
 }
 
 .contacto input{
-    width: 110px;
-    height: 30px;
-    font-size: 14px;
-    padding: 5px;
+    width:110px;
+    height:30px;
+    font-size:14px;
+    padding:5px;
 }
 
 .whatsapp{
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-    cursor: pointer;
+    width:30px;
+    height:30px;
+    margin-left:10px;
+    cursor:pointer;
 }
 
 .columna h3{
-    margin-bottom: 15px;
-    font-size: 22px;
-    color: white;
+    margin-bottom:15px;
+    font-size:22px;
+    color:white;
 }
 
 .logo{
     width:100px;
-    height: auto;
+    height:auto;
 }
 
 .centro iframe{
-	color: #f0f0f0;
-    border-radius: 10px;
-	width: 500px;
-	height: 250px;
+    width:100%;
+    max-width:500px;
+    height:250px;
+    border-radius:10px;
 }
-
 
 .copyright{
-    margin-top: 15px;
-    font-size: 14px;
-    color: rgb(243, 241, 241);
-    font-weight: bold;
+    margin-top:15px;
+    font-size:14px;
+    color:#f3f1f1;
+    font-weight:bold;
 }
 
+/* ========================= */
 /* Responsive */
-@media (max-width: 768px){
+/* ========================= */
+
+@media (max-width:768px){
+
     .footer{
-        grid-template-columns: 33%;
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .contacto{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .contacto label{
+        width:auto;
+        margin-bottom:5px;
+    }
+
+    .contacto input{
+        width:90%;
+        max-width:250px;
+        text-align:center;
+    }
+
+    .whatsapp{
+        margin-left:0;
+        margin-top:10px;
+    }
+
+    .centro iframe{
+        width:100%;
+        height:250px;
+    }
+
+    .columna img{
+        max-width:100%;
+        height:auto;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
