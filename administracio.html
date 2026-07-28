@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <title>BTP-Administración de Empresas</title>
 <link href="stylcss.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="logipfm2026" href="logipfm2026.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 		<!--Menu de Navegación-->
@@ -37,27 +39,23 @@
 
     <!-- Texto -->
     <div class="caja texto">
-        <h2>BTP-dministracion de Empresas</h2>
-        <p>
-            Formamos estudiantes con conocimientos y habilidades para desenvolverse en el mundo empresarial.
+        <h2>BTP-Administracion de Empresas</h2>
+        <p> Formamos estudiantes con conocimientos y habilidades para desenvolverse en el mundo empresarial.
 Nuestros docentes brindan una enseñanza de calidad, orientando a los alumnos en áreas como contabilidad, administración, finanzas y gestión empresarial.
-Nuestros estudiantes aprenden a organizar, planificar y dirigir actividades dentro de una empresa, desarrollando responsabilidad, liderazgo y trabajo en equipo.
-Motivamos a los jóvenes a crear sus propios negocios y aprovechar oportunidades en el mercado laboral.
-Nuestro objetivo es preparar profesionales capaces de tomar decisiones, administrar recursos y adaptarse a los cambios del entorno empresarial.
-
+Nuestros estudiantes aprenden a organizar, planificar y dirigir actividades dentro de una empresa, desarrollando responsabilidad. 
         </p>
     </div>
 
     <!-- Video -->
     <div class="caja video">
-        <video controls>
-            <source src="ImgsitiowebdeIsaiJorge/videoofertaacademicaadministracion.mp4">
+        <video  controls autoplay muted loop playsinline>
+            <source src="videoofertaacademicaadministracion.mp4">
         </video>
     </div>
 
     <!-- Imagen -->
     <div class="caja imagen">
-        <img src="ImgsitiowebdeIsaiJorge/imgofertacademicaadministracion.jpeg" alt="Imagen">
+        <img src="imgofertacademicaadministracion.jpeg" alt="Imagen">
     </div>
 
 </div>
@@ -110,10 +108,19 @@ Nuestro objetivo es preparar profesionales capaces de tomar decisiones, administ
     <!-- Columna 3 -->
     <div class="columna">
         <h3>Desarrolladores Web</h3>
-        <img src="imagenesdeinicio/imglogodesarrolladoresweb.png" width="250" height="250" alt="Logo Desarrolladores" class="logo">
+        <img src="imglogodesarrolladoresweb.png" width="250" height="250" alt="Logo Desarrolladores" class="logo">
     </div>
 
 	</footer>
+     <script>
+		const menu = document.getElementById('movil-menu');
+		const navlist = document.getElementById('nav-list');
+		
+		menu.addEventListener('click',() =>{
+			navlist.classList.toggle('active');				  
+	 });
+	</script>
+	<script src="javascrip.js"></script>
 <body>
 </body>
 </html>

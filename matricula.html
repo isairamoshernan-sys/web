@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>Matricula</title>
+<link rel="icon" type="logipfm2026" href="logipfm2026.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -130,9 +132,18 @@
     <!-- Columna 3 -->
     <div class="columna">
         <h3>Desarrolladores Web</h3>
-        <img src="imagenesdeinicio/imglogodesarrolladoresweb.png" width="250" height="250" alt="Logo Desarrolladores" class="logo">
+        <img src="imglogodesarrolladoresweb.png" width="250" height="250" alt="Logo Desarrolladores" class="logo">
     </div>
 
 	</footer>
+     <script>
+		const menu = document.getElementById('movil-menu');
+		const navlist = document.getElementById('nav-list');
+		
+		menu.addEventListener('click',() =>{
+			navlist.classList.toggle('active');				  
+	 });
+	</script>
+	<script src="javascrip.js"></script>
 </body>
 </html>

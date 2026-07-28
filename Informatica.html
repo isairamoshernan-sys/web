@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <title>BTP-Informatica</title>
 <link href="stylcss.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="logipfm2026" href="logipfm2026.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 		<!--Menu de Navegación-->
@@ -24,7 +26,8 @@
 				<li><a href="matricula.html">Matricula </a></li>
 				<li><a href="contacto.html">Contacto</a></li>
 			</ul>
-		</nav>			
+		</nav>	
+
 	<header>
 	<h1>BTP-Informatica</h1>
 	</header>
@@ -43,20 +46,14 @@ En esta área los estudiantes aprenden a:
 Manejar programas informáticos
 Crear páginas web
 Programar
-Comprender el funcionamiento de las computadoras
-Además, se fomenta:
-La creatividad
-El pensamiento lógico
-La resolución de problemas
-Preparando a los estudiantes para enfrentar los retos del mundo digital.
-
+Comprender el funcionamiento de las computadoras.
             </p>
         </div>
 
         <div class="video">
             <h2>Video</h2>
-            <video controls>
-                <source src="ImgsitiowebdeIsaiJorge/videodeofertaacademicadeinformatica1.mp4" type="video/mp4">
+            <video controls autoplay muted loop playsinline>
+                <source src="videodeofertaacademicadeinformatica1.mp4" type="video/mp4">
             </video>
         </div>
 
@@ -64,7 +61,7 @@ Preparando a los estudiantes para enfrentar los retos del mundo digital.
 
     <div class="imagen">
         <h2>Laboratorio de Informática</h2>
-        <img src="ImgsitiowebdeIsaiJorge/imgofertaacademicainformatica1.jpeg" alt="Laboratorio">
+        <img src="imgofertaacademicainformatica1.jpeg" alt="Laboratorio">
     </div>
 
 </section>
@@ -119,10 +116,19 @@ Preparando a los estudiantes para enfrentar los retos del mundo digital.
     <!-- Columna 3 -->
     <div class="columna">
         <h3>Desarrolladores Web</h3>
-        <img src="imagenesdeinicio/imglogodesarrolladoresweb.png" width="250" height="250" alt="Logo Desarrolladores" class="logo">
+        <img src="imglogodesarrolladoresweb.png" width="250" height="250" alt="Logo Desarrolladores" class="logo">
     </div>
 
 	</footer>
 <body>
+  <script>
+		const menu = document.getElementById('movil-menu');
+		const navlist = document.getElementById('nav-list');
+		
+		menu.addEventListener('click',() =>{
+			navlist.classList.toggle('active');				  
+	 });
+	</script>
+	<script src="javascrip.js"></script>
 </body>
 </html>

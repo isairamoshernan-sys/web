@@ -52,7 +52,6 @@ body header {
 	}
 	.nav-list.active {display: flex !important}
 	.nav-list li{padding: 1rem 0;}
-	
 }
 .dropdown{
     position: relative;
@@ -211,21 +210,21 @@ body header {
 }
 
 .video video{
-    width:100%;
+    width:90%;
     border-radius:10px;
 }
 
 .imagen{
     text-align:center;
     background:#f5f5f5;
-    padding:20px;
+    padding:15px;
     border-radius:10px;
     box-shadow:0 2px 8px rgba(0,0,0,.1);
 }
 
 .imagen img{
     width:100%;
-    max-height:500px;
+    max-height:350px;
     object-fit:cover;
     border-radius:10px;
 }
