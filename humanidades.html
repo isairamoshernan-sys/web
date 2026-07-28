@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>BTP-Ciencias y Humanidades</title>
 <link href="stylcss.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="logipfm2026" href="logipfm2026.png">
 </head>
 <body>
 		<!--Menu de Navegación-->
@@ -51,13 +52,13 @@ Además, fomentamos valores como la responsabilidad, el respeto y el compromiso,
     <!-- Video -->
     <div class="caja video">
         <video controls>
-            <source src="ImgsitiowebdeIsaiJorge/videoofertaacademicahumanidades.mp4">
+            <source src="videoofertaacademicahumanidades.mp4">
         </video>
     </div>
 
     <!-- Imagen -->
     <div class="caja imagen">
-        <img src="ImgsitiowebdeIsaiJorge/imgofertaacademicahumanidades1.jpeg" alt="Imagen">
+        <img src="imgofertaacademicahumanidades1.jpeg" alt="Imagen">
     </div>
 
 </div>
@@ -110,10 +111,19 @@ Además, fomentamos valores como la responsabilidad, el respeto y el compromiso,
     <!-- Columna 3 -->
     <div class="columna">
         <h3>Desarrolladores Web</h3>
-        <img src="imagenesdeinicio/imglogodesarrolladoresweb.png" width="250" height="250" alt="Logo Desarrolladores" class="logo">
+        <img src="imglogodesarrolladoresweb.png" width="250" height="250" alt="Logo Desarrolladores" class="logo">
     </div>
 
 	</footer>
 <body>
+     <script>
+		const menu = document.getElementById('movil-menu');
+		const navlist = document.getElementById('nav-list');
+		
+		menu.addEventListener('click',() =>{
+			navlist.classList.toggle('active');				  
+	 });
+	</script>
+	<script src="javascrip.js"></script>
 </body>
 </html>

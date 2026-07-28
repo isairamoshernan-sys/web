@@ -6,13 +6,13 @@
     <title>Prematrícula - Colegio</title>
 
     <link rel="stylesheet" href="csstyle.css">
-
+<link rel="icon" type="logipfm2026" href="logipfm2026.png">
 </head>
 
 <body>
     <nav class="navbar"> 
 		<div class="logo">
-			<a href="#" style="display: flex;align-items: center;"><img src="logipfm2026.png" width="95" alt="not file"><span>C.E.M.G.P.F.M</span></a>
+			<a href="index.html" style="display: flex;align-items: center;"><img src="logipfm2026.png" width="95" alt="not file"><span>C.E.M.G.P.F.M</span></a>
 		</div>
 <!--Boton para telefonos-->
 		<button class="menu-bar" id="movil-menu">
@@ -445,6 +445,14 @@ Declaro que toda la información proporcionada es verdadera.
 </form>
 
 </div>
-
+ <script>
+		const menu = document.getElementById('movil-menu');
+		const navlist = document.getElementById('nav-list');
+		
+		menu.addEventListener('click',() =>{
+			navlist.classList.toggle('active');				  
+	 });
+	</script>
+	<script src="javascrip.js"></script>
 </body>
 </html>
